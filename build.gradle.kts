@@ -26,6 +26,13 @@ dependencies {
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+	implementation("io.springfox:springfox-boot-starter:3.0.0")
+	implementation("org.springframework.data:spring-data-envers")
+
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+	implementation("com.fasterxml.jackson.datatype:jackson-datatype-jdk8")
 }
 
 tasks.withType<KotlinCompile> {
